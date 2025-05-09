@@ -19,4 +19,47 @@ function getValue(obj: User, key: UserKeys) {
 const user: User = { name: "John", age: 25 };
 console.log(getValue(user, "name")); // Output: John
 
+---
+
+## 2. Provide an example of using union and intersection types in TypeScript?
+
+In TypeScript, union and intersection types allow us to compose types in powerful ways.
+
+- A **union type** (`|`) means a value can be any one of several types.
+- An **intersection type** (`&`) combines multiple types into one that includes all their properties.
+
+---
+
+### Union Type Example:
+
+```ts
+type Status = "success" | "error" | "loading";
+
+function showStatus(status: Status) {
+  console.log(`Status is: ${status}`);
+}
+
+showStatus("success");
+showStatus("loading");
+
+
+### Intersection Type Example:
+
+type Person = {
+  name: string;
+};
+
+type Employee = {
+  employeeId: number;
+};
+
+type Staff = Person & Employee;
+
+const staffMember: Staff = {
+  name: "Alice",
+  employeeId: 101,
+};
+
+
+
 
