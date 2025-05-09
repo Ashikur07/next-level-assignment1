@@ -19,7 +19,7 @@ function getValue(obj: User, key: UserKeys) {
 const user: User = { name: "John", age: 25 };
 console.log(getValue(user, "name")); // Output: John
 
----
+<br/>
 
 ## 2. Provide an example of using union and intersection types in TypeScript?
 
