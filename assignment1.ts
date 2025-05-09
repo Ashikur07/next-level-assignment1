@@ -58,8 +58,6 @@ function processValue(value: string | number): number {
 }
 
 
-
-
 interface Product {
     name: string;
     price: number;
@@ -103,6 +101,7 @@ function getDayType(day: Day): string {
         return "Weekday";
     }
 }
+
 
 
 async function squareAsync(n: number): Promise<number> {
