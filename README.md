@@ -19,7 +19,7 @@ function getValue(obj: User, key: UserKeys) {
 const user: User = { name: "John", age: 25 };
 console.log(getValue(user, "name")); // Output: John
 
-<br/>
+```ts
 
 ## 2. Provide an example of using union and intersection types in TypeScript?
 
@@ -41,10 +41,10 @@ function showStatus(status: Status) {
 
 showStatus("success");
 showStatus("loading");
-
+```ts
 
 ### Intersection Type Example:
-
+```ts
 type Person = {
   name: string;
 };
@@ -59,7 +59,7 @@ const staffMember: Staff = {
   name: "Alice",
   employeeId: 101,
 };
-
+```ts
 
 
 
