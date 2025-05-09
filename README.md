@@ -3,7 +3,7 @@
 The keyof keyword is used to get a **union of the keys** of a given object type. It helps ensure type safety by restricting inputs to only the existing property names of that object. This is especially useful when writing generic functions that work with object properties.
 
 ### Example:
-
+```
 type User = {
   name: string;
   age: number;
@@ -17,7 +17,7 @@ function getValue(obj: User, key: UserKeys) {
 
 const user: User = { name: "John", age: 25 };
 console.log(getValue(user, "name")); // Output: John
-
+```
 
 
 ## 2. Provide an example of using union and intersection types in TypeScript?
@@ -30,7 +30,7 @@ In TypeScript, union and intersection types allow us to compose types in powerfu
 
 ### Union Type Example:
 
-
+```
 type Status = "success" | "error" | "loading";
 
 function showStatus(status: Status) {
@@ -39,10 +39,10 @@ function showStatus(status: Status) {
 
 showStatus("success");
 showStatus("loading");
-
+```
 
 ### Intersection Type Example:
-
+```
 type Person = {
   name: string;
 };
@@ -57,7 +57,7 @@ const staffMember: Staff = {
   name: "Alice",
   employeeId: 101,
 };
-
+```
 
 
 
