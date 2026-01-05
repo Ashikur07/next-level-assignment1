@@ -58,6 +58,6 @@ const staffMember: Staff = {
   employeeId: 101,
 };
 ```
-update 
+update
 
 
